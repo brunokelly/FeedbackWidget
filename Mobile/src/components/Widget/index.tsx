@@ -1,12 +1,15 @@
 import React, { useRef } from "react";
 import { TouchableOpacity } from "react-native";
-import { ChatTeardropDots } from "phosphor-react-native";
-import BottomSheet from "@gorhom/bottom-sheet";
 import { gestureHandlerRootHOC } from "react-native-gesture-handler";
-
-import { styles } from "./styles";
-import { theme } from "../../theme";
+import BottomSheet from "@gorhom/bottom-sheet";
 import bottomSheet from "@gorhom/bottom-sheet/lib/typescript/components/bottomSheet";
+import { ChatTeardropDots } from "phosphor-react-native";
+
+import { Options } from "../Options";
+import { Form } from "../Form";
+
+import { theme } from "../../theme";
+import { styles } from "./styles";
 
 function Widget() {
   const bottomSheetRef = useRef<bottomSheet>(null);
@@ -26,7 +29,7 @@ function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-        <></>
+        <Form feedbackType="BUG" />
       </BottomSheet>
     </>
   );
