@@ -41,4 +41,8 @@ export const styles = StyleSheet.create({
     borderColor: theme.colors.stroke,
     fontFamily: theme.fonts.regular,
   },
+  footer: {
+    flexDirection: "row",
+    marginBottom: 16,
+  },
 });

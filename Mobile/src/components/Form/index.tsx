@@ -3,6 +3,8 @@ import React from "react";
 import { View, TextInput, Image, Text, TouchableOpacity } from "react-native";
 import { theme } from "../../theme";
 import { FeedbackType, feedbackTypes } from "../../utils/feedbackTypes";
+import { Button } from "../Button";
+import { ScreenshotButton } from "../ScreenshotButton";
 
 import { styles } from "./styles";
 
@@ -34,6 +36,15 @@ export function Form({ feedbackType }: Props) {
           placeholder="Conte com detalhes o que está acontecendo..."
           placeholderTextColor={theme.colors.text_secondary}
         />
+        <View style={styles.footer}>
+          <ScreenshotButton
+            onTakeShot={() => {}}
+            onRemoveShot={() => {}}
+            screenshot=""
+          />
+
+          <Button isLoading={false} />
+        </View>
       </View>
     </View>
   );
