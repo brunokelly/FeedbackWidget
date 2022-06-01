@@ -10,6 +10,7 @@ import { Form } from "../Form";
 
 import { theme } from "../../theme";
 import { styles } from "./styles";
+import { Success } from "../Success";
 
 function Widget() {
   const bottomSheetRef = useRef<bottomSheet>(null);
@@ -29,7 +30,7 @@ function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-        <Form feedbackType="BUG" />
+        <Success />
       </BottomSheet>
     </>
   );
