@@ -12,16 +12,18 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     position: "absolute",
     right: 16,
-    bottom: getBottomSpace() + 16,
+    bottom: getBottomSpace() + 18,
   },
 
   modal: {
     backgroundColor: theme.colors.surface_primary,
-    paddingBottom: getBottomSpace() + 16,
+    paddingBottom: getBottomSpace() + 18,
   },
 
   indicator: {
-    backgroundColor: theme.colors.surface_primary,
+    backgroundColor: theme.colors.text_primary,
     width: 56,
+    opacity: 0.25,
+    height: 4,
   },
 });

@@ -13,12 +13,12 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.surface_secondary,
   },
 
-  title: {
+  image: {
     width: 40,
     height: 40,
   },
 
-  image: {
+  title: {
     fontSize: 14,
     marginTop: 8,
     fontFamily: theme.fonts.medium,

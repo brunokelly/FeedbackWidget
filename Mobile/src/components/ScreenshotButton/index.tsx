@@ -32,7 +32,7 @@ export function ScreenshotButton({
           />
         </View>
       ) : (
-        <Camera size={24} color={theme.colors.text_primary} weight="bold" />
+        <Camera size={24} color={theme.colors.text_secondary} weight="bold" />
       )}
     </TouchableOpacity>
   );

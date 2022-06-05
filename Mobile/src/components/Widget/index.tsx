@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { TouchableOpacity } from "react-native";
+import { KeyboardAvoidingView, TouchableOpacity } from "react-native";
 import { gestureHandlerRootHOC } from "react-native-gesture-handler";
 import BottomSheet from "@gorhom/bottom-sheet";
 import bottomSheet from "@gorhom/bottom-sheet/lib/typescript/components/bottomSheet";
@@ -46,7 +46,7 @@ function Widget() {
         handleIndicatorStyle={styles.indicator}
       >
         {feedbackSent ? (
-          <Success />
+          <Success onSendAnotherFeedback={handleRestartFeedback} />
         ) : (
           <>
             {feedbackTypeForm ? (

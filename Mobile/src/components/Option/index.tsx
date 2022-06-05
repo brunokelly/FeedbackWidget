@@ -6,6 +6,7 @@ import {
   Image,
   ImageProps,
   Text,
+  KeyboardAvoidingView,
 } from "react-native";
 
 import { styles } from "./styles";
@@ -18,7 +19,7 @@ export function Option({ title, image, ...rest }: Props) {
   return (
     <TouchableOpacity style={styles.container} {...rest}>
       <Image source={image} style={styles.image} />
-      <Text style={styles.title} />
+      <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 }

@@ -10,7 +10,6 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     borderRadius: 4,
   },
-
   title: {
     fontSize: 14,
     fontFamily: theme.fonts.medium,
